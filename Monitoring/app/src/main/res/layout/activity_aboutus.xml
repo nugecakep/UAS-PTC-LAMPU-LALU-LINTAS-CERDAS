@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aboutus"
+    android:background="#D6D7D7">
+
+    <ImageButton
+        android:id="@+id/Buttonback2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Arrow Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/esp32cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="About Us"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/Buttonback2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="216dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/team" />
+
+    <TextView
+        android:id="@+id/textViewKorlantas"
+        android:layout_width="338dp"
+        android:layout_height="351dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppinsregular"
+        android:justificationMode="inter_word"
+        android:text="Aplikasi ini dirancang untuk memantau dan mengelola lalu lintas pada persimpangan jalan melalui teknologi berbasis Arduino dan ESP32-CAM. Dengan aplikasi ini, pengguna dapat memantau kondisi lalu lintas secara real-time, melihat volume kendaraan yang terdeteksi pada setiap jalur, dan mendukung pengelolaan lampu lalu lintas agar lebih efisien. Sistem ini bertujuan untuk membantu mengurangi kemacetan dengan mengoptimalkan pengaturan lampu lalu lintas berdasarkan data aktual yang diperoleh dari sensor kamera."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
